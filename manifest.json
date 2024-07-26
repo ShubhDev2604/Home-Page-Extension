@@ -1,0 +1,21 @@
+
+{
+    "manifest_version": 3,
+    "name": "Home Page",
+    "version": "1.0",
+    "description": "My Home Page",
+    "chrome_url_overrides": {
+      "newtab": "popup.html"
+    },
+    "icons": {
+      "128": "icon128.png",
+      "48": "icon48.png",
+      "16": "icon16.png"
+    },
+    "action": {
+      "default_icon": "icon16.png",
+      "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab"]
+  }
+  

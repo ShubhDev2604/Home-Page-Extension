@@ -1,0 +1,269 @@
+body {
+  font-family: "Playwrite AT", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FBF6E2; /* Light background */
+  color: #131842; /* Dark text for readability */
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Announcement */
+#Announce {
+  width: 100%;
+  background-color: #ECCEAE; /* Soft background */
+  padding: 15px; /* Increased padding */
+  color: #131842; /* Dark text */
+  text-align: center;
+  position: relative;
+  border-bottom: 3px solid #E68369; /* Warm accent */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.announcement-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.announcement {
+  background-color: #FBF6E2; /* Light background */
+  padding: 15px; /* Increased padding */
+  border-radius: 15px;
+  white-space: nowrap; /* Prevent line breaks */
+  animation: scroll 10s linear infinite; /* Scroll animation */
+  font-size: 1.8em; /* Increased font size */
+  color: #131842; /* Dark text */
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Boxes */
+.box {
+  background: #ECCEAE; /* Soft background */
+  border: 1px solid #E68369; /* Warm accent */
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#box1 {
+  flex: 2;
+}
+
+#box2 {
+  flex: 1;
+}
+
+.insidebox {
+  margin: 10px 0;
+}
+
+/* Slides Container */
+#slides-container {
+  width: 100%;
+  height: auto;
+}
+
+/* Timer */
+#timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ECCEAE; /* Soft background */
+  border: 1px solid #E68369; /* Warm accent */
+  border-radius: 10px;
+}
+
+#timerDisplay {
+  font-size: 3em; /* Increased font size */
+  margin-bottom: 10px;
+  color: #131842; /* Dark text */
+}
+
+#pomodoroCount {
+  margin-bottom: 20px;
+  font-size: 1.5em; /* Increased font size */
+  color: #131842; /* Dark text */
+}
+
+/* Quotes */
+#quotes {
+  text-align: center;
+  background-color: #E68369; /* Warm accent */
+  border: 1px solid #131842; /* Dark border */
+  border-radius: 10px;
+  padding: 15px; /* Increased padding */
+}
+
+.quote {
+  font-size: 2em; /* Increased font size */
+  margin-bottom: 10px;
+  color: #131842; /* Dark text */
+}
+
+.book, .author {
+  font-size: 1.5em; /* Increased font size */
+  color: #131842; /* Dark text */
+}
+
+/* Music Player */
+#Music-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#player-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FBF6E2; /* Light background */
+  border: 1px solid #E68369; /* Warm accent */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+#close-popup {
+  background: #E68369; /* Warm accent */
+  color: #FBF6E2; /* Light background */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Chat Box */
+#chatBox {
+  border: 1px solid #E68369; /* Warm accent */
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #FBF6E2; /* Light background */
+}
+
+.input-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+#userInput {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #E68369; /* Warm accent */
+  border-radius: 5px;
+}
+
+#sendButton {
+  background: #E68369; /* Warm accent */
+  color: #FBF6E2; /* Light background */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Form */
+#form {
+  margin-top: 20px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ECCEAE; /* Soft background */
+  border: 1px solid #E68369; /* Warm accent */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #131842; /* Dark text */
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #E68369; /* Warm accent */
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background: linear-gradient(145deg, #E68369, #ECCEAE); /* Gradient background */
+  color: #FBF6E2; /* Light text */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Send Button */
+#sendButton {
+  background: linear-gradient(145deg, #E68369, #ECCEAE); /* Gradient background */
+  color: #FBF6E2; /* Light text */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Close Popup Button */
+#close-popup {
+  background: linear-gradient(145deg, #E68369, #FBF6E2); /* Gradient background */
+  color: #FBF6E2; /* Light text */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover Effects */
+button:hover {
+  background: linear-gradient(145deg, #ECCEAE, #E68369); /* Reverse gradient on hover */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), inset 1px 1px 3px rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+  background: linear-gradient(145deg, #E68369, #ECCEAE); /* Original gradient on active */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.1);
+  transform: translateY(1px); /* Slight press effect */
+}
+#drawing-canvas {
+  background-color: #ffffff; /* Soft background */
+}
+
+#scribble {
+  background-color: #ECCEAE; /* Soft background */
+  border: 1px solid #E68369; /* Warm accent */
+  border-radius: 10px;
+  padding: 10px; /* Add some padding inside the element */
+  margin: 0 10px; /* Add margin on the left and right */
+}
